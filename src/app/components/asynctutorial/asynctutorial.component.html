@@ -1,0 +1,20 @@
+<p>asynctutorial works!</p>
+<!--
+<h2>{{asyncPipe | async}}</h2> 
+-->
+
+<div *ngIf="(booleanOb | async);else elseBlock">
+    <h2>This is true block</h2>
+</div>
+<ng-template #elseBlock>
+    <div>
+        <h2>This is false block</h2>
+    </div>
+</ng-template>
+
+
+<!--
+<h2>"value return through pipe"</h2>
+<h2 *ngIf="booleanOb|async as flag">{{flag}}</h2>
+
+-->
